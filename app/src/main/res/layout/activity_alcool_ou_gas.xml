@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlcoolOuGasActivity">
+
+    <ImageView
+        android:id="@+id/logoAlcool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16sp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/informacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="Saiba a melhor opção para o\n abastecimento do seu carro"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoAlcool" />
+
+    <EditText
+        android:id="@+id/valorAlcool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="escrever"
+
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/logoAlcool"
+        app:layout_constraintTop_toBottomOf="@id/informacao"
+
+        />
+    <EditText
+        android:id="@+id/valorGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="escrever"
+
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/valorAlcool"
+        app:layout_constraintTop_toBottomOf="@id/valorAlcool"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/logoAlcool"
+        app:layout_constraintEnd_toEndOf="@id/logoAlcool"
+        app:layout_constraintTop_toBottomOf="@id/valorGas"
+        android:layout_marginTop="20dp"
+        android:text="Calcular"
+        android:textSize="22sp"
+
+
+
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
