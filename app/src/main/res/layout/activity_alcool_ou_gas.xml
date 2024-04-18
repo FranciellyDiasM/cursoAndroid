@@ -7,70 +7,72 @@
     tools:context=".AlcoolOuGasActivity">
 
     <ImageView
-        android:id="@+id/logoAlcool"
-        android:layout_width="wrap_content"
+        android:id="@+id/imgLogoAlcool"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16sp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/informacao"
+        android:id="@+id/txtInformacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
         android:gravity="center"
         android:text="Saiba a melhor opção para o\n abastecimento do seu carro"
         android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logoAlcool" />
+        app:layout_constraintEnd_toEndOf="@id/imgLogoAlcool"
+        app:layout_constraintStart_toStartOf="@id/imgLogoAlcool"
+        app:layout_constraintTop_toBottomOf="@id/imgLogoAlcool" />
 
     <EditText
-        android:id="@+id/valorAlcool"
-        android:layout_width="wrap_content"
+        android:id="@+id/edtValorAlcool"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="escrever"
-
-        android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@id/logoAlcool"
-        app:layout_constraintTop_toBottomOf="@id/informacao"
+        android:layout_marginTop="20dp"
+        android:hint="Preço Alcool ex: 1.90"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@id/imgLogoAlcool"
+        app:layout_constraintStart_toStartOf="@id/imgLogoAlcool"
+        app:layout_constraintTop_toBottomOf="@id/txtInformacao"
 
         />
+
     <EditText
-        android:id="@+id/valorGas"
-        android:layout_width="wrap_content"
+        android:id="@+id/edtValorGas"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="escrever"
-
-        android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@id/valorAlcool"
-        app:layout_constraintTop_toBottomOf="@id/valorAlcool"
-        android:layout_marginTop="16dp"
-        />
+        android:layout_marginTop="20dp"
+        android:hint="Preço da Gasolina ex: 2.10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@id/imgLogoAlcool"
+        app:layout_constraintStart_toStartOf="@id/imgLogoAlcool"
+        app:layout_constraintTop_toBottomOf="@id/edtValorAlcool" />
 
     <Button
         android:id="@+id/btnCalcular"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/logoAlcool"
-        app:layout_constraintEnd_toEndOf="@id/logoAlcool"
-        app:layout_constraintTop_toBottomOf="@id/valorGas"
         android:layout_marginTop="20dp"
         android:text="Calcular"
-        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@id/imgLogoAlcool"
+        app:layout_constraintStart_toStartOf="@id/imgLogoAlcool"
+        app:layout_constraintTop_toBottomOf="@id/edtValorGas" />
 
-
-
-
-        />
-
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Nenhuma opção escolhida"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCalcular" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
