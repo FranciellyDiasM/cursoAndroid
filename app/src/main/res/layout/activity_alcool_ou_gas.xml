@@ -29,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@id/imgLogoAlcool" />
 
     <EditText
-        android:id="@+id/edtValorAlcool"
+        android:id="@+id/edtPrecoAlcool"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -42,7 +42,7 @@
         />
 
     <EditText
-        android:id="@+id/edtValorGas"
+        android:id="@+id/edtPrecoGas"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -50,7 +50,7 @@
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="@id/imgLogoAlcool"
         app:layout_constraintStart_toStartOf="@id/imgLogoAlcool"
-        app:layout_constraintTop_toBottomOf="@id/edtValorAlcool" />
+        app:layout_constraintTop_toBottomOf="@id/edtPrecoAlcool" />
 
     <Button
         android:id="@+id/btnCalcular"
@@ -60,7 +60,7 @@
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="@id/imgLogoAlcool"
         app:layout_constraintStart_toStartOf="@id/imgLogoAlcool"
-        app:layout_constraintTop_toBottomOf="@id/edtValorGas" />
+        app:layout_constraintTop_toBottomOf="@id/edtPrecoGas" />
 
     <TextView
         android:id="@+id/txtResultado"
