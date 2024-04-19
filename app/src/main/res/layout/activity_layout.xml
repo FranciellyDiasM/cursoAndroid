@@ -12,39 +12,159 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:drawableTop="@drawable/ic_seta_branca_24dp"
         android:text="House of Cards"
         android:textColor="#558979"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:drawableTop="@drawable/ic_seta_branca_24dp"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtTemporada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="S:1 EP:2"
-        android:textSize="23sp"
         android:textColor="#225596"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtTitulo" />
 
-
-
-
-
-<!--    <ImageView-->
-        android:id="@+id/imgHouse"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <ImageView
+        android:id="@+id/imgMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/msg_branca_24"
+        app:layout_constraintEnd_toEndOf="@id/guideline1"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/txtTemporada" />
+
+    <ImageView
+        android:id="@+id/imgVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/volume_branco_24"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/txtTemporada" />
+
+    <ImageView
+        android:id="@+id/imgStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star_branca_24"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@id/txtTemporada" />
+
+    <ImageView
+        android:id="@+id/imgContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/content_branca_24"
+        app:layout_constraintEnd_toEndOf="@id/guideline4"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toBottomOf="@id/txtTemporada" />
+
+    <ImageView
+        android:id="@+id/imgHouse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
         android:src="@drawable/house"
-        app:layout_constraintBottom_toTopOf=""
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgMsg" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTempoInicial"
+        android:text="01:00"
+        android:textSize="20sp"
+        android:textColor="#335578"
+          app:layout_constraintStart_toStartOf="@id/imgHouse"
+        app:layout_constraintTop_toBottomOf="@id/imgHouse"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTempoTotal"
+        android:text="41:20"
+        android:textSize="20sp"
+        android:textColor="#335589"
+        app:layout_constraintEnd_toEndOf="@id/imgHouse"
+        app:layout_constraintTop_toBottomOf="@id/imgHouse"
+        android:layout_marginTop="20dp"/>
+    <SeekBar
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgBarra"
+        app:layout_constraintStart_toEndOf="@id/txtTempoInicial"
+        app:layout_constraintEnd_toStartOf="@id/txtTempoTotal"
+        app:layout_constraintTop_toBottomOf="@id/imgHouse"
+        android:layout_marginTop="20dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgVoltar"
+        android:src="@drawable/voltar_branca_24"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/imgBarra"
+        android:layout_marginTop="20dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgPause"
+        android:src="@drawable/pause_brana_24"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@id/imgBarra"
+        android:layout_marginTop="20dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgStop"
+        android:src="@drawable/stop_branca_24"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintEnd_toEndOf="@id/guideline4"
+        app:layout_constraintTop_toBottomOf="@id/imgBarra"
+        android:layout_marginTop="20dp"
+        android:contentDescription="botãoStop"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
