@@ -1,27 +1,22 @@
 package br.com.dias.francielly
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import br.com.dias.francielly.databinding.ActivityFraseDoDiaBinding
 import java.util.Random
 
 class FraseDoDiaActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityFraseDoDiaBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_frase_do_dia)
+        binding = ActivityFraseDoDiaBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        texto = findViewById(R.id.instrucao)
-        botao = findViewById(R.id.gerar)
-
-        botao.setOnClickListener {
+        binding.gerar.setOnClickListener {
             gerarFrase()
-
         }
     }
-
-    lateinit var texto: TextView
-    lateinit var botao: Button
 
     val frases = arrayOf("frase ", "frase2", "frase3", "frase4")
 
@@ -29,9 +24,6 @@ class FraseDoDiaActivity : AppCompatActivity() {
         val totalItensArray = frases.size
         val numeroAleatorio = Random().nextInt(totalItensArray)
 
-        texto.setText((frases[numeroAleatorio]))
-
+        binding.instrucao.setText((frases[numeroAleatorio]))
     }
-
-
 }
