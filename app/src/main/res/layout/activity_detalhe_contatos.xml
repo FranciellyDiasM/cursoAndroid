@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalheContatosActivity">
+
+
+    <ImageView
+        android:id="@+id/detalheContatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/detalhe_contato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Contatos"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/detalheContatos"
+        app:layout_constraintStart_toEndOf="@id/detalheContatos"
+        app:layout_constraintTop_toTopOf="@id/detalheContatos" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/detalheContatos"
+        app:layout_constraintTop_toBottomOf="@id/detalheContatos" />
+
+    <TextView
+        android:id="@+id/txtTelfone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Tel: (111111111"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/txtEmail"
+        app:layout_constraintTop_toBottomOf="@id/txtEmail" />
+
+    <TextView
+        android:id="@+id/txtTelefone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Cel: (333888484775"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/txtTelfone1"
+        app:layout_constraintTop_toBottomOf="@id/txtTelfone1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

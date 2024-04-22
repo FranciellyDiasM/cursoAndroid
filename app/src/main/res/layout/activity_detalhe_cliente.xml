@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalheClienteActivity">
+
+
+    <ImageView
+        android:id="@+id/detalheCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/detalhe_cliente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Clientes"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/detalheCliente"
+        app:layout_constraintStart_toEndOf="@id/detalheCliente"
+        app:layout_constraintTop_toTopOf="@id/detalheCliente" />
+
+    <TextView
+        android:id="@+id/txtEmpresa1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="- Empresa 1"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/txtCliente"
+        app:layout_constraintTop_toBottomOf="@id/txtCliente" />
+
+    <TextView
+        android:id="@+id/txtEmpresa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="- Empresa 2"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/txtEmpresa1"
+        app:layout_constraintTop_toBottomOf="@id/txtEmpresa1" />
+
+    <TextView
+        android:id="@+id/txtEmpresa3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="- Empresa 3"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/txtEmpresa2"
+        app:layout_constraintTop_toBottomOf="@id/txtEmpresa2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

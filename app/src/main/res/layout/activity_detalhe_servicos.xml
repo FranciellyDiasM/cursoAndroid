@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalheServicosActivity">
+
+
+    <ImageView
+        android:id="@+id/detalheServicos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/detalhe_servico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtServicos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Serviços"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/detalheServicos"
+        app:layout_constraintStart_toEndOf="@id/detalheServicos"
+        app:layout_constraintTop_toTopOf="@id/detalheServicos" />
+
+
+    <TextView
+        android:id="@+id/txtConsultoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="- Consultoria"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/detalheServicos"
+        app:layout_constraintTop_toBottomOf="@id/detalheServicos" />
+
+    <TextView
+        android:id="@+id/txtDesenvolvimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="- Desenvolvimento"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/txtConsultoria"
+        app:layout_constraintTop_toBottomOf="@id/txtConsultoria" />
+
+    <TextView
+        android:id="@+id/txtDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="- Design"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/txtDesenvolvimento"
+        app:layout_constraintTop_toBottomOf="@id/txtDesenvolvimento" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
