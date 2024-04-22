@@ -3,9 +3,9 @@ package br.com.dias.francielly
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class RelativeLayoutActivity : AppCompatActivity() {
+class AtmInterfaceActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_relative_layout)
+        setContentView(R.layout.activity_atm_interface)
     }
 }
