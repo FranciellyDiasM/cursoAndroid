@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/detalheContatos"
+        android:id="@+id/detalheContato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -25,9 +25,9 @@
         android:text="Contatos"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/detalheContatos"
-        app:layout_constraintStart_toEndOf="@id/detalheContatos"
-        app:layout_constraintTop_toTopOf="@id/detalheContatos" />
+        app:layout_constraintBottom_toBottomOf="@id/detalheContato"
+        app:layout_constraintStart_toEndOf="@id/detalheContato"
+        app:layout_constraintTop_toTopOf="@id/detalheContato" />
 
     <TextView
         android:id="@+id/txtEmail"
@@ -35,8 +35,8 @@
         android:layout_height="wrap_content"
         android:text="Email"
         android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@id/detalheContatos"
-        app:layout_constraintTop_toBottomOf="@id/detalheContatos" />
+        app:layout_constraintStart_toStartOf="@id/detalheContato"
+        app:layout_constraintTop_toBottomOf="@id/detalheContato" />
 
     <TextView
         android:id="@+id/txtTelfone1"

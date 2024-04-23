@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/menuCliente"
+        android:id="@+id/btnCliente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -27,7 +27,7 @@
         app:layout_constraintTop_toBottomOf="@id/logoAtm" />
 
     <ImageView
-        android:id="@+id/menuEmpresa"
+        android:id="@+id/btnEmpresa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -36,22 +36,22 @@
         app:layout_constraintTop_toBottomOf="@id/logoAtm" />
 
     <ImageView
-        android:id="@+id/menuServicos"
+        android:id="@+id/btnServico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:src="@drawable/menu_servico"
         app:layout_constraintStart_toStartOf="@id/logoAtm"
-        app:layout_constraintTop_toBottomOf="@id/menuCliente" />
+        app:layout_constraintTop_toBottomOf="@id/btnCliente" />
 
     <ImageView
-        android:id="@+id/menuContato"
+        android:id="@+id/btnContato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:src="@drawable/menu_contato"
         app:layout_constraintEnd_toEndOf="@id/logoAtm"
-        app:layout_constraintTop_toBottomOf="@id/menuEmpresa" />
+        app:layout_constraintTop_toBottomOf="@id/btnEmpresa" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
