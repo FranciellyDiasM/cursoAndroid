@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#65BC8D"
+    tools:context=".CaraOuCoroaActivity">
+
+
+    <ImageView
+        android:id="@+id/imgCaraOuCoroa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/logo_cara_coroa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnJogar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:text="Jogar"
+        android:textColor="#65bc8d"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@id/imgCaraOuCoroa"
+        app:layout_constraintStart_toStartOf="@id/imgCaraOuCoroa"
+        app:layout_constraintTop_toBottomOf="@id/imgCaraOuCoroa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,17 +13,26 @@
         android:theme="@style/Theme.Francielly"
         tools:targetApi="31">
         <activity
-            android:name=".DadosActivity"
+            android:name=".CoroaActivity"
             android:exported="false" />
         <activity
-            android:name=".PassarDadosActivity"
-            android:exported="true" >
+            android:name=".CaraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CaraOuCoroaActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DadosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PassarDadosActivity"
+            android:exported="true" />
         <activity
             android:name=".DetalheContatosActivity"
             android:exported="false" />
@@ -39,9 +48,7 @@
         <activity
             android:name=".AtmInterfaceActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".LayoutActivity"
             android:exported="true" />
