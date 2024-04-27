@@ -22,10 +22,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnVoltarCoroa"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="#ffffff"
+        android:background="@drawable/bg_button"
         android:text="Voltar"
         android:textColor="#65bc8d"
         android:textSize="25sp"

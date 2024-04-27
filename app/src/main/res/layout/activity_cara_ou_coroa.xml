@@ -21,10 +21,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnJogar"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/bg_button"
         android:text="Jogar"
         android:textColor="#65bc8d"
         android:textSize="25sp"
